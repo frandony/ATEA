@@ -283,3 +283,121 @@ nav .active {
     color: #444;
     font-family: libre baskerville;
 }
+/* ================= RESPONSIVO MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ===== HEADER ===== */
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 45px;
+        margin-top: 5px;
+    }
+
+    .logo .sub {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0 0 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    /* ===== HERO ===== */
+
+    .principal {
+        height: auto;
+        padding: 120px 20px 60px 20px;
+        text-align: center;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .texto-principal {
+        max-width: 100%;
+    }
+
+    .texto-principal h2 {
+        font-size: 32px;
+    }
+
+    .texto-principal p {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn {
+        margin-left: 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .btn-ajuda {
+        font-size: 20px;
+        padding: 15px 20px;
+        margin: 40px 0 0 0;
+        width: 85%;
+        text-align: center;
+    }
+
+    /* ===== MISSÃO ===== */
+
+    .mission {
+        padding: 70px 20px;
+    }
+
+    .mission-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .mission-image img {
+        width: 100%;
+    }
+
+    .mission-content {
+        max-width: 100%;
+    }
+
+    .mission-content h1 {
+        font-size: 30px;
+    }
+
+    .mission-content h2 {
+        font-size: 22px;
+    }
+
+    .mission-content p {
+        font-size: 16px;
+    }
+
+    .mission-content ul {
+        text-align: left;
+    }
+
+    .btn-mission {
+        width: 80%;
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+}
