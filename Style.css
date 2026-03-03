@@ -1,0 +1,285 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Anothershabby ;
+    src: url(Fonts/Anothershabby_trial.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px; /* Compensa header fixo */
+}
+#home{ 
+    background: url(Assets/Main-Background.jpg) center center/cover;
+    background-position: 0% 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 151, 178, 0.70);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    font-family: anothershabby;
+    font-size: 70px;
+    margin-top:  15px;
+}
+
+.logo .azul {
+    color: #4a7da3;
+}
+
+.logo .sub {
+    color: black;
+    font-size: 18px;
+    font-family: Libre Baskerville;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-family: Libre Baskerville;
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    text-shadow: black 2px 2px 4px ;
+    color: white;
+    font-size: 23px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+nav .active {
+    background-color: #4a7da3;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+
+.principal {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    text-align: center;
+    margin-top: -30px
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.texto-principal {
+    position: relative;
+    color: white;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.texto-principal h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: Alice;
+}
+
+.texto-principal h2 strong {
+    font-weight: 700;
+}
+
+.texto-principal h2 em {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.texto-principal p {
+    font-size: 30px;
+    line-height: 1.7;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    font-family: merryweather;
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 0px;
+    
+}
+
+.btn {
+    background-color: #5f89a5;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 80px;
+    font-family: Libre Baskerville;
+}
+
+.btn:hover {
+    background-color: #4b6f87;
+}
+
+
+.btn-ajuda {
+    display: inline-block;
+    background-color: #ff3333;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top:70px ;
+    margin-right: 100px;
+    font-family: league spartan;
+}
+
+.btn-ajuda:hover {
+    background-color: #cc0000;
+}
+/* ================= MISSÃO ================= */
+
+.mission {
+    padding: 100px 8%;
+    background-color: #f5f7f9;
+    text-align: center;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* ===== IMAGEM ===== */
+
+.mission-image img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ===== CONTEÚDO ===== */
+
+.mission-content {
+    max-width: 600px;
+}
+
+.mission-content h1 {
+    font-size: 42px; 
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: playfair display;
+}
+
+.mission-content h2 {
+    font-size: 28px;
+    color: #0097b2;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-family: DM serif display;
+}
+
+.mission-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #333;
+    font-family: cormorant garamond
+}
+
+.mission-content ul {
+    margin-bottom: 45px; 
+    padding-left: 20px;
+    font-family: libre baskerville;
+    text-align: left;
+}
+
+.mission-content ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #444;
+}
+
+/* ===== BOTÃO ===== */
+
+.btn-mission {
+    display: inline-block;
+    background-color: #4c7693;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    font-family: libre baskerville;
+}
+
+.btn-mission:hover {
+    background-color: #36586f;
+    transform: scale(1.05);
+}
+
+/* ===== FRASE FINAL ===== */
+
+.mission-content blockquote {
+    margin-top: 45px;
+    font-style: italic;
+    background: #eef3f6; 
+    padding: 18px 25px;
+    border-left: 4px solid #0097b2;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #444;
+    font-family: libre baskerville;
+}
