@@ -294,6 +294,12 @@ nav .active {
     flex-direction: row;
     padding: 10px 15px;
 }
+.logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0px;
+}
 
     .logo h1 {
         font-size: 28px;
@@ -302,6 +308,8 @@ nav .active {
 
     .logo .sub {
         font-size: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     nav ul {
