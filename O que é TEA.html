@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O que é tea</title>
+<link rel="stylesheet" href="o que é tea.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1><span class="azul">A</span>TEA</h1>
+<span class="sub">– ONG de apoio</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html" class="active">Início</a></li>
+<li><a href="#">Recursos</a></li>
+<li><a href="#">Sobre nós</a></li>
+<li><a href="#">Contato</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section id="hero">
+
+<div class="overlay">
+<h1>O QUE É TEA?</h1>
+<a href="https://www.youtube.com/watch?v=8uTHFYAQtnA" target="_blank" class="btn">ASSISTA O VIDEO</a>
+</div>
+
+<div class="triangles"></div>
+
+</section>
+
+<!-- TEXTO EXPLICATIVO -->
+
+<section class="info-tea">
+
+<h2>Início: <span>o que é autismo?</span></h2>
+
+<div class="conteudo">
+
+<p>
+O Transtorno do Espectro Autista (TEA) é uma condição do
+neurodesenvolvimento, ou seja, está relacionada à forma como o
+cérebro se desenvolve e processa informações desde a infância.
+De acordo com o DSM-5 (Manual Diagnóstico e Estatístico de
+Transtornos Mentais), o TEA é caracterizado por dois grandes
+grupos de critérios:
+</p>
+
+<ol>
+
+<li>
+<strong>Déficits na comunicação e na interação social</strong>,
+como dificuldades em iniciar ou manter conversas, compreender
+expressões faciais, gestos e desenvolver relações sociais.
+</li>
+
+<li>
+<strong>Padrões restritos e repetitivos de comportamento</strong>,
+como apego a rotinas, movimentos repetitivos, interesses muito
+específicos e alterações na forma de perceber estímulos
+sensoriais, como sons, luzes ou texturas.
+</li>
+
+</ol>
+
+<p>
+Essas características podem variar bastante entre as pessoas,
+por isso o autismo é chamado de Transtorno do Espectro Autista,
+indicando que existe uma grande diversidade na forma como ele
+se manifesta.
+</p>
+
+</div>
+
+</section>
+
+<!-- BOTÕES INTERATIVOS -->
+ 
+
+<section class="tea-info">
+    
+
+<div class="topicos">
+    
+
+<button type="button" onclick="mudarTexto('comunicacao')">
+Comunicação e Interação Social
+</button>
+
+<button type="button" onclick="mudarTexto('padroes')">
+Padrões Comportamentais Restritos
+</button>
+
+<button type="button" onclick="mudarTexto('sensorial')">
+Processamento Sensorial
+</button>
+
+<button type="button" onclick="mudarTexto('suporte')">
+Níveis de Suporte
+</button>
+
+</div>
+
+<div id="conteudo-tea" class="conteudo-tea">
+    <p class="intro-tea">
+Selecione um dos  <strong>temas acima</strong> para entender melhor as principais características do Transtorno do Espectro Autista (TEA). Cada tópico apresenta informações importantes sobre comportamento, comunicação e necessidades de suporte.
+</p>
+    
+
+</div>
+
+</section>
+
+</main>
+
+<!-- SCRIPT -->
+
+<script>
+
+function mudarTexto(tipo){
+
+const conteudo = document.getElementById("conteudo-tea");
+
+let texto = "";
+
+if(tipo === "comunicacao"){
+texto = `
+<p>Pessoas com TEA podem apresentar diferenças na forma de se comunicar e interagir socialmente. Essas diferenças não significam falta de interesse pelas pessoas, mas sim uma maneira diferente de compreender e expressar a comunicação.</p>
+
+<p><strong>Déficits na comunicação e interação social incluem:</strong></p>
+
+<ul>
+<li>Dificuldade em iniciar ou manter conversas</li>
+<li>Pouco contato visual</li>
+<li>Dificuldade em compreender expressões faciais</li>
+<li>Desafios na criação de relações sociais</li>
+<li>Dificuldade em compreender ironia, sarcasmo ou linguagem figurada</li>
+<li>Preferência por conversas sobre interesses específicos</li>
+<li>Dificuldade em interpretar emoções de outras pessoas</li>
+</ul>
+`;
+}
+
+else if(tipo === "padroes"){
+texto = `
+<p>Muitas pessoas com TEA apresentam comportamentos repetitivos ou interesses muito específicos. Esses padrões ajudam na organização e previsibilidade do ambiente.</p>
+
+<p><strong>Padrões restritos e repetitivos podem incluir:</strong></p>
+
+<ul>
+<li>Apego intenso a rotinas</li>
+<li>Movimentos repetitivos (balançar o corpo, bater as mãos)</li>
+<li>Interesses muito específicos ou profundos</li>
+<li>Resistência a mudanças na rotina</li>
+<li>Repetição de palavras ou frases (ecolalia)</li>
+<li>Organização rígida de objetos</li>
+<li>Forte foco em determinados temas ou atividades</li>
+</ul>
+`;
+}
+
+else if(tipo === "sensorial"){
+texto = `
+<p>Pessoas com autismo podem perceber estímulos sensoriais de maneira diferente. Sons, luzes, cheiros ou texturas podem ser sentidos de forma mais intensa ou mais fraca.</p>
+
+<p><strong>Diferenças no processamento sensorial:</strong></p>
+
+<ul>
+<li>Sensibilidade a sons altos</li>
+<li>Sensibilidade à luz intensa</li>
+<li>Reações diferentes a texturas de roupas ou alimentos</li>
+<li>Incômodo com certos cheiros</li>
+<li>Busca por estímulos sensoriais (tocar objetos, girar coisas)</li>
+<li>Dificuldade em ambientes muito barulhentos ou movimentados</li>
+</ul>
+`;
+}
+
+else if(tipo === "suporte"){
+texto = `
+<p>O DSM-5 classifica o autismo em níveis de suporte para indicar o grau de apoio necessário no dia a dia. Esses níveis ajudam profissionais a planejar intervenções e acompanhamentos.</p>
+
+<p><strong>Níveis de suporte definidos no DSM-5:</strong></p>
+
+<ul>
+<li>Nível 1 — Requer apoio: dificuldades leves na comunicação e interação social</li>
+<li>Nível 2 — Requer apoio substancial: dificuldades mais evidentes na comunicação e comportamento</li>
+<li>Nível 3 — Requer apoio muito substancial: grandes desafios na comunicação e necessidade de suporte intenso</li>
+<li>Os níveis podem variar ao longo da vida</li>
+<li>Cada pessoa no espectro apresenta necessidades diferentes</li>
+</ul>
+`;
+}
+
+/* remove animação se existir */
+conteudo.classList.remove("animar-texto");
+
+/* pequena pausa para reiniciar animação */
+setTimeout(() => {
+
+conteudo.innerHTML = texto;
+conteudo.classList.add("animar-texto");
+
+}, 100);
+
+}
+</script>
+
+</body>
+</html>
